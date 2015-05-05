@@ -1,5 +1,78 @@
+<!--
+
+@element z-typo
+
+# Typo
+
+General styles of some basic HTML5 elements.
+
+- `<h1>` ~ `<h6>`, `<p>`
+- `<ul>`, `<ol>`, `<li>`
+
+## Usage
+
+Just add `[z]` attribute to any parent element of the target table like `<body z>`
+
+-->
+
+<!--
+
+@example default
+
+<div z>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Paragraph</p>
+  <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item
+          <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+          </ul>
+      </li>
+  </ul>
+  <ol>
+      <li>Ordered List Item</li>
+      <li>Ordered List Item</li>
+      <li>Ordered List Item</li>
+      <li>Ordered List Item
+          <ol>
+              <li>Ordered List Item</li>
+              <li>Ordered List Item</li>
+              <li>Ordered List Item</li>
+              <li>Ordered List Item</li>
+          </ol>
+      </li>
+  </ol>
+  <ul unstyled>
+      <li>Unstyled List Item</li>
+      <li>Unstyled List Item</li>
+      <li>Unstyled List Item</li>
+      <li>Unstyled List Item
+          <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+          </ul>
+      </li>
+  </ul>
+</div>
+
+-->
+
 <style shim-shadowdom>
-[z] {
+[z],
+html /deep/ [z] {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -8,26 +81,50 @@
   background-color: #fff;
   margin: 0;
 }
-[z] /deep/ h1, [z] /deep/ h2, [z] /deep/ h3 {
+[z] /deep/ h1,
+html /deep/ [z] /deep/ h1,
+[z] /deep/ h2,
+html /deep/ [z] /deep/ h2,
+[z] /deep/ h3,
+html /deep/ [z] /deep/ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-[z] /deep/ h4, [z] /deep/ h5, [z] /deep/ h6 {
+[z] /deep/ h4,
+html /deep/ [z] /deep/ h4,
+[z] /deep/ h5,
+html /deep/ [z] /deep/ h5,
+[z] /deep/ h6,
+html /deep/ [z] /deep/ h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-[z] /deep/ p, [z] /deep/ ul, [z] /deep/ ol {
+[z] /deep/ p,
+html /deep/ [z] /deep/ p,
+[z] /deep/ ul,
+html /deep/ [z] /deep/ ul,
+[z] /deep/ ol,
+html /deep/ [z] /deep/ ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
-[z] /deep/ ul[unstyled], [z] /deep/ ol[unstyled] {
+[z] /deep/ ul[unstyled],
+html /deep/ [z] /deep/ ul[unstyled],
+[z] /deep/ ol[unstyled],
+html /deep/ [z] /deep/ ol[unstyled] {
   padding-left: 0;
   list-style: none;
 }
-[z] /deep/ h1 {font-size: 2em;}
-[z] /deep/ h2 {font-size: 1.5em;}
-[z] /deep/ h3 {font-size: 1.17em;}
-[z] /deep/ h4 {font-size: 1em;}
-[z] /deep/ h5 {font-size: 0.83em;}
-[z] /deep/ h6 {font-size: 0.67em;}
+[z] /deep/ h1,
+html /deep/ [z] /deep/ h1 {font-size: 2em;}
+[z] /deep/ h2,
+html /deep/ [z] /deep/ h2 {font-size: 1.5em;}
+[z] /deep/ h3,
+html /deep/ [z] /deep/ h3 {font-size: 1.17em;}
+[z] /deep/ h4,
+html /deep/ [z] /deep/ h4 {font-size: 1em;}
+[z] /deep/ h5,
+html /deep/ [z] /deep/ h5 {font-size: 0.83em;}
+[z] /deep/ h6,
+html /deep/ [z] /deep/ h6 {font-size: 0.67em;}
 </style>
