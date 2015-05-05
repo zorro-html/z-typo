@@ -1,32 +1,63 @@
-# Type
+# Typo
 
-基本的字体字号边距等，包括
+General styles of some basic HTML5 elements.
 
-* 区域内的字体字号字色行高
-* `<body>` 的背景色和边距
-* 各级标题、段落和列表的字号和边距
+- `<h1>` ~ `<h6>`, `<p>`
+- `<ul>`, `<ol>`, `<li>`
 
-注：需要在最外层 (如 `<html>` 标签中) 加入一个特性 `z`，即：`<html z>`
+## Usage
 
-## Example
+Just add `[z]` attribute to any parent element of the target table like `<body z>`
+
+## Examples
 
 ```
-<html z>
-  <head>...</head>
-  <body>
-    <h1>Hello World</h1>
-    <p>Paragraph</p>
-    <ul>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item
-        <ul>
-          <li>Item</li>
-          <li>Item</li>
-          <li>Item</li>
-        </ul>
+<div z>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Paragraph</p>
+  <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item
+          <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+          </ul>
       </li>
-    </ul>
-  </body>
-</html>
+  </ul>
+  <ol>
+      <li>Ordered List Item</li>
+      <li>Ordered List Item</li>
+      <li>Ordered List Item</li>
+      <li>Ordered List Item
+          <ol>
+              <li>Ordered List Item</li>
+              <li>Ordered List Item</li>
+              <li>Ordered List Item</li>
+              <li>Ordered List Item</li>
+          </ol>
+      </li>
+  </ol>
+  <ul unstyled>
+      <li>Unstyled List Item</li>
+      <li>Unstyled List Item</li>
+      <li>Unstyled List Item</li>
+      <li>Unstyled List Item
+          <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+          </ul>
+      </li>
+  </ul>
+</div>
 ```
