@@ -5,6 +5,12 @@ General styles of some basic HTML5 elements.
 - `<h1>` ~ `<h6>`, `<p>`
 - `<ul>`, `<ol>`, `<li>`
 
+## Import
+
+```
+<link rel="import" href="z-typo/z-typo.html">
+```
+
 ## Usage
 
 Just add `[z]` attribute to any parent element of the target table like `<body z>`
